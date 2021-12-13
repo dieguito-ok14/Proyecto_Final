@@ -1,0 +1,190 @@
+body {
+	margin: 0;
+	font-family: "Open Sans", sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(img/imagen.png)
+}
+
+
+
+.cara {
+	border-radius: 10px;
+	height: 220px;
+}
+
+.uno {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	height: calc(90vh - 65px);
+	background-color: #303030;
+	color: white;
+
+}
+
+.caja-central {
+	margin-top: 10%;
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	border-radius: 20px;
+	overflow: hidden;
+	height: 50%;
+}
+
+.caja-cara {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 40%;
+	background-color: #424242;
+}
+
+.caja-presentacion {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 60%;
+	background-color: #f2f2f2;
+	color: #303030;
+	padding: 10px;
+}
+
+
+
+.contenedor{
+	width: 90%;
+	max-width: 800px;
+	margin:auto
+}
+/* ------------------------- */
+/* HEADER */
+/* ------------------------- */
+
+header {
+	padding: 40px 0;
+}
+
+header .logo {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+header .logo p {
+	color: #9B9B9B;
+}
+
+header form {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+header .barra-busqueda {
+	width: 70%;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	padding: 0 20px;
+	border-radius: 100px;
+	border: none;
+	text-align: center;
+	font-size: 16px;
+}
+
+header .categorias {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+header .categorias a {
+	color: #9B9B9B;
+	margin: 10px 20px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+header .categorias a.activo {
+	color: #000;
+}
+/* ------------------------- */
+/* Grid */
+/* ------------------------- */
+
+.grid {
+	position: relative;
+	width: 100%;
+	opacity: 0;
+	transition: opacity 0.5s linear 1s;
+}
+
+.grid.imagenes-cargadas {
+	opacity: 1;
+}
+
+.grid .item {
+	position: absolute;
+	display: block;
+	padding: 0;
+	margin: 10px;
+	width: calc(33.333333% - 20px);
+}
+
+.grid .item-contenido {
+	position: relative;
+}
+
+.grid .item img {
+	width: 100%;
+	cursor: pointer;
+	vertical-align: top;
+}
+
+.red-social {
+	height: 60px;
+	background-color: #f2f2f2;
+	border-radius: 10px;
+}
+
+footer {
+	background-color: #424242;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	color: #f2f2f2;
+	height: 250px;
+}
+
+.contacto {
+	width: 30%;
+	display: flex;
+	justify-content: center;
+}
+
+@media (max-width: 1000px) {
+	.caja-central {
+		width: 90%;
+		height: 70%;
+		flex-direction: column;
+	}
+
+	.caja-cara {
+		width: 100%;
+		height: 50%;
+	}
+
+	.caja-presentacion {
+		width: 100%;
+		height: 50%;
+		align-items: flex-start;
+	}
+
+
+}
