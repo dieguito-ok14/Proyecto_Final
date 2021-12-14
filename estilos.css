@@ -12,17 +12,49 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
-
-a {
-	text-decoration: none;
+audio{
+	padding: 5px 5px 5px 5px;
+	margin-left: auto;
 }
 
+a {
+	outline: none;
+	text-decoration: none;
+	padding: 0px 1px 0;
+  }
+  
+  a:link {
+	color: rgba(0,0,0,1);
+  }
+  
+  a:visited {
+	color: rgba(0,0,0.1);
+  }
+  
+  a:focus {
+	border-bottom: 1px solid;
+	background: rgba(0, 0, 0, 0.253);
+  }
+  
+  a:hover {
+	font-size:15px;
+	color:rgba(0,20,0.9);
+  }
+  
+/*+++++++++++++++*/
+.boton-descarga{
+	
+	margin-left:20px;
+	border-radius: 5px;
+	
+	
+}
 .contenedor {
 	width: 90%;
 	max-width: 800px;
 	margin: auto;
 }
-/* ------------------------- */
+
 .cara {
 	border-radius: 10px;
 	height: 25vw;
